@@ -555,13 +555,6 @@ span .accent {
   max-width: 264px;
 }
 
-/* .soc-links-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-} */
-
 .footer .soc-links-list {
   display: flex;
   /* align-items: center;
@@ -579,6 +572,7 @@ span .accent {
   width: 208px;
   margin: 0;
   padding: 0;
+  margin-right: 80px;
 }
 .footer-media-links .soc-links-list {
   margin: 0;
@@ -603,4 +597,308 @@ span .accent {
   background-color: #31d0aa;
 }
 
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 453px;
+  height: 80px;
+}
+.subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-form {
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
+.subscribe-label {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-email {
+  display: inline-block;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 8px 16px;
+}
+::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.subscribe-btn {
+  display: flex;
+
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  margin: 0 24px;
+  border: none;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus,
+.subscribe-btn:active {
+  background-color: #404bbf;
+}
+.plane-icon {
+  fill: #ffffff;
+  margin-left: 16px;
+}
 /* --------------FOOTER------------------ */
+
+/* ------------Modal----Pop-Up Screen----------- */
+
+.modal-overlay {
+  background: rgba(46, 47, 66, 0.4);
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.modal {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  width: 408px;
+  min-height: 560px;
+  padding: 72px 24px 24px;
+
+  overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay:not(.is-open) .modal {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+.close-btn {
+  position: absolute;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  /* position: relative; */
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 8px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  background-color: #404bbf;
+  fill: #ffffff;
+  border: none;
+  transition: background-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+label {
+  width: 360px;
+  /* height: 58px; */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.input-icon-div {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.modal-name,
+.modal-phone,
+.modal-email {
+  position: relative;
+  margin-top: 8px;
+  padding: 8px 16px 8px 38px;
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.modal-comment {
+  position: relative;
+  margin-top: 8px;
+  padding: 8px 16px 8px 16px;
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  resize: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+.modal-comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.icon-email,
+.icon-phone,
+.icon-person {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  transform: translateY(50%);
+  fill: #2e2f42;
+}
+
+.modal-phone:focus,
+.modal-email:focus,
+.modal-name:focus,
+.modal-comment:focus,
+.modal-phone:hover,
+.modal-email:hover,
+.modal-name:hover,
+.modal-comment:hover {
+  border-color: #4d5ae5;
+  fill: #4d5ae5;
+}
+
+.modal-phone:focus + svg,
+.modal-email:focus + svg,
+.modal-name:focus + svg,
+.modal-comment:focus + svg,
+.modal-phone:hover + svg,
+.modal-email:hover + svg,
+.modal-name:hover + svg,
+.modal-comment:hover + svg {
+  border-color: #4d5ae5;
+  fill: #4d5ae5;
+}
+
+.checkbox-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+
+.privacy-label-text {
+}
+
+.checkbox-icon {
+}
+
+.privacy-label-text {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+  }
+  .checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+    fill: transparent;
+  }
+}
+
+.privacy:checked + .privacy-label-text .checkbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+.modal-btn {
+  display: block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  margin: 0 auto;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus,
+.modal-btn:active {
+  background-color: #404bbf;
+}
+
+/* ------------Modal----Pop-Up Screen----------- */

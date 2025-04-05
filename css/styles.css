@@ -616,6 +616,7 @@ span .accent {
 .footer-form {
   display: flex;
   flex-direction: row;
+  gap: 24px;
 }
 
 .subscribe-label {
@@ -635,16 +636,20 @@ span .accent {
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 8px 16px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 ::placeholder {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 .subscribe-btn {
   display: flex;
-
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   padding: 8px 24px;
   min-width: 165px;
@@ -657,7 +662,7 @@ span .accent {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
-  margin-left: 24px;
+
   border: none;
 }
 

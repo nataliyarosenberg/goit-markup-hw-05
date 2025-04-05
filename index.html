@@ -503,78 +503,81 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
-        <button class="close-btn" type="submit">
+        <button class="close-btn" type="button">
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
         </button>
-        <h2 class="modal-title">
-          Leave your contacts and we will call you back
-        </h2>
-        <div class="modal-contacts-info">
-          <div class="input-wrap">
-            <label class="name" for="name"
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-contacts-info">
+          <div class="label-wrap">
+            <label class="user-name" for="name"
               >Name
-
-              <input class="modal-name" type="text" id="name" />
-              <svg class="icon-person" width="18" height="24">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
+              <div class="input-wrap">
+                <input class="modal-name" type="text" id="user-name" />
+                <svg class="icon-person" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
             </label>
           </div>
-          <div class="input-wrap">
+          <div class="label-wrap">
             <label class="phone" for="phone"
               >Phone
 
-              <input class="modal-phone" name="phone" type="tel" id="phone" />
-              <svg class="icon-phone" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
+              <div class="input-wrap">
+                <input class="modal-phone" name="phone" type="tel" id="phone" />
+                <svg class="icon-phone" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
             </label>
           </div>
-          <div class="input-wrap">
+          <div class="label-wrap">
             <label class="email" for="modal-email"
               >Email
 
-              <input class="modal-email" type="email" id="modal-email" />
-              <svg class="icon-email" width="18" height="24">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
+              <div class="input-wrap">
+                <input class="modal-email" type="email" id="modal-email" />
+                <svg class="icon-email" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
             </label>
           </div>
           <div class="textarea">
-            <label for="comment"
+            <label for="user-comment"
               >Comment<textarea
                 class="modal-comment"
-                name="comment"
-                rows="5"
-                id="comment"
+                name="user-comment"
+                id="user-comment"
                 placeholder="Text input"
               ></textarea>
             </label>
           </div>
-        </div>
-        <div class="checkbox-div">
-          <input
-            type="checkbox"
-            class="privacy visually-hidden"
-            name="privacy"
-            id="privacy"
-            value="true"
-          />
-          <label class="privacy-label-text" for="privacy"
-            ><span class="checkbox"
-              ><svg class="checkbox-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-Vector"></use>
-              </svg> </span
-            >I accept the terms and conditions of the&nbsp;<a href=""
-              >Privacy Policy</a
-            ></label
-          >
-        </div>
-        <button class="modal-btn" type="submit">Send</button>
+
+          <div class="checkbox-div">
+            <input
+              type="checkbox"
+              class="privacy visually-hidden"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="privacy-label-text" for="user-privacy">
+              <span class="checkbox"
+                ><svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg> </span
+              >I accept the terms and conditions of the&nbsp;<a href=""
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>

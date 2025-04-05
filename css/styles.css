@@ -763,7 +763,7 @@ label {
   color: #8e8f99;
 }
 
-.input-icon-div {
+.input-wrap {
   position: relative;
 
   margin-bottom: 8px;
@@ -786,7 +786,7 @@ label {
 .icon-phone,
 .icon-person {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 16px;
 
   fill: #2e2f42;
@@ -837,7 +837,7 @@ label {
   position: relative;
   display: flex;
   align-items: center;
-  width: 360px;
+  width: 100%;
   margin-top: 16px;
   margin-bottom: 24px;
   gap: 8px;

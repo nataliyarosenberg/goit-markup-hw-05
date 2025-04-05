@@ -614,14 +614,16 @@ span .accent {
 }
 
 .footer-form {
+  display: flex;
+  flex-direction: row;
 }
 
 .subscribe-label {
-  display: flex;
-  width: 100%;
-  padding: 0;
-  flex-direction: row;
-  justify-content: space-between;
+  /* display: flex; */
+  /* width: 100%;
+  padding: 0; */
+  /* flex-direction: row;
+  justify-content: space-between; */
 }
 
 .input-email {

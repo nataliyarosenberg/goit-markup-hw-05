@@ -771,7 +771,10 @@ span .accent {
   margin-bottom: 16px;
 }
 
-label {
+.user-name,
+.user-phone,
+.user-email,
+.user-comment {
   display: block;
   width: 360px;
   font-weight: 400;
@@ -792,11 +795,13 @@ label {
   position: relative;
 }
 
-.input-wrap-name,
-.input-wrap-phone,
-.input-wrap-email {
+.input-wrap {
   display: flex;
   position: relative;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
 }
 .modal-name,
 .modal-phone,

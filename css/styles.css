@@ -772,22 +772,18 @@ span .accent {
   margin-bottom: 16px;
 }
 
-.user-name,
-.user-phone,
-.user-email,
-.user-comment {
+.label-wrap {
   display: block;
   width: 100%;
-
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
+  color: rgba(46, 47, 66, 0.4);
 }
 
-.label-wrap {
+.div-wrap {
   position: relative;
 
   margin-bottom: 8px;
@@ -796,13 +792,7 @@ span .accent {
 .input-wrap {
   position: relative;
 }
-
-.input-wrap {
-  position: relative;
-}
-.modal-name,
-.modal-phone,
-.modal-email {
+.input {
   padding: 8px 16px 8px 38px;
   padding-left: 38px;
   width: 100%;
@@ -850,25 +840,17 @@ span .accent {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-phone:focus,
-.modal-email:focus,
-.modal-name:focus,
+.input:focus,
+.input:hover,
 .modal-comment:focus,
-.modal-phone:hover,
-.modal-email:hover,
-.modal-name:hover,
 .modal-comment:hover {
   border-color: #4d5ae5;
   fill: #4d5ae5;
 }
 
-.modal-phone:focus + svg,
-.modal-email:focus + svg,
-.modal-name:focus + svg,
+.input:focus + svg,
 .modal-comment:focus + svg,
-.modal-phone:hover + svg,
-.modal-email:hover + svg,
-.modal-name:hover + svg,
+.input:hover + svg,
 .modal-comment:hover + svg {
   border-color: #4d5ae5;
   fill: #4d5ae5;

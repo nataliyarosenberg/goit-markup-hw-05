@@ -770,10 +770,8 @@ span .accent {
   color: #2e2f42;
   margin-bottom: 16px;
 }
-label,
-.user-email,
-.user-phone,
-.user-name {
+
+label {
   display: block;
   width: 360px;
   font-weight: 400;
@@ -783,10 +781,7 @@ label,
   color: #8e8f99;
   margin-bottom: 4px;
 }
-/* svg {
-  width: 18px;
-  height: 24px;
-} */
+
 .label-wrap {
   position: relative;
 
@@ -799,7 +794,7 @@ label,
 
 .input-wrap-name,
 .input-wrap-phone,
-.input-wrap-emai {
+.input-wrap-email {
   display: flex;
   position: relative;
 }

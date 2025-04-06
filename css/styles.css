@@ -873,7 +873,7 @@ span .accent {
 }
 
 .privacy-label-text {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 12px;
   line-height: 1.17;
@@ -885,6 +885,7 @@ span .accent {
     color: #4d5ae5;
   }
 }
+
 .checkbox {
   display: inline-flex;
   justify-content: center;

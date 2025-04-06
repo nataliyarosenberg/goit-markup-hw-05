@@ -639,6 +639,7 @@ span .accent {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
+  font-size: 12px;
 }
 ::placeholder {
   font-size: 12px;
@@ -776,7 +777,8 @@ span .accent {
 .user-email,
 .user-comment {
   display: block;
-  width: 360px;
+  width: 100%;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
